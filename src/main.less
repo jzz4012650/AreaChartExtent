@@ -1,0 +1,66 @@
+@import "~less-plugin-est/src/all.less";
+
+.global-reset();
+
+div,
+ul,
+ol,
+li,
+tr,
+td,
+th,
+button,
+input,
+select,
+textarea,
+p{
+    .box-sizing(border-box);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-size: 12px;
+    font-family: STHeiti, "Microsoft YaHei", Aria, sans-serif;
+    color: #333;
+}
+
+#container{
+    height: 100%;
+    overflow: hidden;
+    .main-wrapper{
+        position: relative;
+        height: 100%;
+        .content-wrapper{
+            position: absolute;
+            top: 130px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.icon{
+    .inline-block();
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green{
+    color: #01ff00;
+}
+
+@import "./components/AreaChartExtent.less";
+@import "./components/BarChartExtent.less";
+
+@import "./components/Header.less";
+@import "./components/SearchArea.less";
+@import "./components/Filters.less";
+@import "./components/ResultTable.less";
+@import "./components/TableExpansion.less";
+@import "./components/EnhancedInput.less";
